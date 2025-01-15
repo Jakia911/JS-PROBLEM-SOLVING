@@ -45,4 +45,14 @@ function createLinkedList(arr) {
       current = current.next;         
   }
   return dummy.next; 
+}
+
+function printLinkedList(head) {
+  let result = [];         
+  while (head) {           
+      result.push(head.val); 
+      head = head.next;    
+  }
+  console.log(result);     
+}
 
