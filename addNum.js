@@ -28,5 +28,11 @@ class ListNode {
       if (l2) l2 = l2.next;
   }
   
+  if (carry > 0) {
+    current.next = new ListNode(carry);
+}
+
+return dummy.next; // The result list starts from dummy.next
+
   }
 }
