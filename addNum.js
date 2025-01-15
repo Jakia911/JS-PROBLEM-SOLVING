@@ -36,3 +36,13 @@ return dummy.next; // The result list starts from dummy.next
 
   }
 }
+
+function createLinkedList(arr) {
+  let dummy = new ListNode(); 
+  let current = dummy;        
+  for (let val of arr) {
+      current.next = new ListNode(val); 
+      current = current.next;         
+  }
+  return dummy.next; 
+
