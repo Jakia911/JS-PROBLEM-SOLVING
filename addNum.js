@@ -55,4 +55,9 @@ function printLinkedList(head) {
   }
   console.log(result);     
 }
+let l1 = createLinkedList([2, 4, 3]); 
+let l2 = createLinkedList([5, 6, 4]); 
+
+let result = addTwoNumbers(l1, l2);
+printLinkedList(result); 
 
